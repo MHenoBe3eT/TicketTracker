@@ -1,4 +1,4 @@
-package vlasov.tickettracker.infrastructure.db.entity;
+package vlasov.tickettracker.infrastructure.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

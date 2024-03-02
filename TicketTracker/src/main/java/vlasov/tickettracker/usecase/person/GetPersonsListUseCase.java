@@ -1,9 +1,10 @@
-package vlasov.tickettracker.usecase.user;
+package vlasov.tickettracker.usecase.person;
 
+import jakarta.inject.Named;
 import vlasov.tickettracker.domain.Person;
 
 import java.util.List;
-
+@Named
 public class GetPersonsListUseCase {
     private final GetPerson getPerson;
 

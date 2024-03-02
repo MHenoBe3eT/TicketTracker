@@ -1,10 +1,9 @@
-package vlasov.tickettracker.usecase.user;
+package vlasov.tickettracker.usecase.person;
 
 import vlasov.tickettracker.domain.Person;
 
 import java.util.List;
-import java.util.UUID;
 
 public interface GetPerson {
-   List<Person> getAll();
+    List<Person> getAll();
 }
