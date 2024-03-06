@@ -5,9 +5,7 @@ import lombok.Data;
 import vlasov.tickettracker.domain.Ticket;
 import vlasov.tickettracker.domain.model.TicketStatus;
 
-import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "tickets")
