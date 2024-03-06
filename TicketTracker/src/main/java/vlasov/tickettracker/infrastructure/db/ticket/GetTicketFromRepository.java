@@ -7,6 +7,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import vlasov.tickettracker.domain.Ticket;
 import vlasov.tickettracker.domain.model.TicketStatus;
+import vlasov.tickettracker.infrastructure.entity.TicketEntity;
 import vlasov.tickettracker.infrastructure.repository.TicketRepository;
 import vlasov.tickettracker.usecase.ticket.GetTicket;
 

@@ -11,7 +11,6 @@ import java.util.UUID;
 @Data
 public class TicketEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
 
     @Column(name = "person_id", nullable = false)
