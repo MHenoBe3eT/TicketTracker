@@ -23,11 +23,12 @@ public class GetTicketFromRepository implements GetTicket {
 
     @Override
     public Ticket byId(UUID id) {
-        return ticketRepository.findById(id).orElse(null);
+        TicketEntity ticket = ticketRepository.findById(id).orElse(null);
+        return TicketEntity.TicketConverter.toDomain(ticket);
     }
 
     @Override
-    public Page<Ticket> findAllWithSorting(
+    public Page<TicketEntity> findAllWithSorting(
             TicketStatus status,
             int pageNumber,
             int pageSize,

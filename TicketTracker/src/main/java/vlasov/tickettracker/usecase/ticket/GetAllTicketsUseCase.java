@@ -2,8 +2,8 @@ package vlasov.tickettracker.usecase.ticket;
 
 import jakarta.inject.Named;
 import org.springframework.data.domain.Page;
-import vlasov.tickettracker.domain.Ticket;
 import vlasov.tickettracker.domain.model.TicketStatus;
+import vlasov.tickettracker.infrastructure.entity.TicketEntity;
 
 @Named
 public class GetAllTicketsUseCase {
@@ -13,7 +13,7 @@ public class GetAllTicketsUseCase {
         this.getTicket = getTicket;
     }
 
-    public Page<Ticket> getAllWithSorting(
+    public Page<TicketEntity> getAllWithSorting(
             TicketStatus status,
             int pageNumber,
             int pageSize,
